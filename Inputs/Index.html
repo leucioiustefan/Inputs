@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="app.js" defer></script>
+    <title>Inputs</title>
+  </head>
+  <body>
+    <div class="form__wrapper">
+      <label for="firstname">First Name</label>
+      <input
+        name="firstname"
+        type="text"
+        placeholder="Enter your first name"
+        class="full-name"
+      />
+      <br />
+      <label for="lastname">Last Name</label>
+      <input
+        type="text"
+        name="lastname"
+        placeholder="Enter your second name"
+        class="full-name"
+      />
+      <br />
+      <label for="gender">Gender</label>
+      <input type="radio" name="gender" value="Male" class="gender" />
+      <label for="gender">Male</label>
+      <input type="radio" name="gender" value="Female" class="gender" />
+      <label for="gender">Female</label>
+      <input type="radio" name="gender" value="Gay" class="gender" checked />
+      <label for="gender">Other</label>
+      <br />
+      <br />
+      <label for="story">My story</label>
+      <br />
+      <textarea name="story" id="story" cols="30" rows="10"></textarea>
+      <br />
+      <label for="cars">Choose a car:</label>
+      <select id="cars">
+        <option value="volvo">Volvo</option>
+        <option value="BMW" selected>Bmw</option>
+        <option value="mercedes">Mercedes</option>
+        <option value="audi">Audi</option>
+      </select>
+      <br />
+
+      <button type="submit" id="submit-btn">Submit and show data</button>
+    </div>
+    <ul id="submited-data"></ul>
+  </body>
+</html>
